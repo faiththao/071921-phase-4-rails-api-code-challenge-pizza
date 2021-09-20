@@ -31,6 +31,6 @@ class RestaurantsController < ApplicationController
   end
 
   def render_unprocessable_entity_response(exception)
-    renser json: {errors: exception.record.errors.full_messages}, status: :unprocessable_entity
+    renser json: { errors: exception.record.errors.full_messages }, status: :unprocessable_entity
   end
 end
